@@ -1,6 +1,7 @@
 backend:
-  name: test-repo
-  login: false
+  name: github
+  repo: Mrk81245/sito-Trentino
+  branch: main
 
 media_folder: "img"
 public_folder: "/img"
@@ -12,6 +13,13 @@ collections:
     create: true
     slug: "{{slug}}"
     fields:
-      - { label: "Titolo", name: "title", widget: "string" }
-      - { label: "Contenuto", name: "body", widget: "markdown" }
-      - { label: "Immagine", name: "image", widget: "image", required: false }
+      - label: "Titolo"
+        name: "title"
+        widget: "string"
+      - label: "Contenuto"
+        name: "body"
+        widget: "markdown"
+      - label: "Immagine"
+        name: "image"
+        widget: "image"
+        required: false
